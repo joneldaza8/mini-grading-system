@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>midterm</title>
+    <title>Student Grading</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Student Grading PHP</title>
@@ -10,7 +10,7 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/icon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
@@ -65,6 +65,9 @@
 
 </head>
 <body>
+  <br>
+  <br>
+  <br>
 
 <?php
                     // Include config file
@@ -75,8 +78,9 @@
 $sql = "SELECT * FROM students";
 if($result = mysqli_query($link, $sql)){
     if(mysqli_num_rows($result) > 0){
-        echo '<table class="table table-bordered table-striped table-dark table-hover">';
+        echo '<table class="table table-bordered table-striped">';
             echo "<tr>";
+            echo '<tr class="bg-danger">';
                 echo "<th>id</th>";
                 echo "<th>name</th>";
                 echo "<th>calculus</th>";

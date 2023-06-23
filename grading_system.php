@@ -72,6 +72,12 @@
     </style>
   </head>
   <body>
+
+  <br> 
+  <div style="text-align: right;">
+      <a href="index.php" style="color: white;">Back</a>
+  </div>
+
     
     <div class="myform">
       <h1>School Grading System</h1>
