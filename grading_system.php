@@ -160,45 +160,30 @@
 
 
         $total = $m + $e + $s + $sc + $ss;
-        $t = ($total / 5);
+        $t = ($total * 100) / 500;
         //Grading system
         function getGrade($value){
-            if($value >= 96 && $value > 200){
-              $grade = 'A+ Excellent';
+            if($value >= 80 && $value <= 100){
+              $grade = 'A - Excellent';
             }
-            else if($value >= 91 && $value < 95){
-              $grade = 'A Very Good';
+            elseif ($value >= 60 && $value < 80) {
+              $grade = 'B - Very Good';
             }
-            else if($value >= 86 && $value < 90){
-              $grade = 'A- Very Good';
+            elseif ($value >= 40 && $value < 60) {
+              $grade = 'C - Good';
             }
-            elseif ($value >= 81 && $value < 85) {
-              $grade = 'B+ Good';
+            elseif ($value >= 20 && $value < 40) {
+              $grade = 'D - Fail';
             }
-            elseif ($value >= 75 && $value < 80) {
-              $grade = 'B Good';
+            elseif ($value >= 0 && $value < 20) {
+              $grade = 'E - Jembe';
             }
-            elseif ($value >= 69 && $value < 74) {
-              $grade = 'B- Good';
+            else {
+              $grade = 'X - You did not do the exam';
             }
-            elseif ($value >= 63 && $value < 68) {
-              $grade = 'C+ Good';
-            }
-            elseif ($value >= 57 && $value < 62) {
-              $grade = 'C Good';
-            }
-            elseif ($value >= 50 && $value < 56) {
-              $grade = 'C- Good';
-            }
-            elseif ($value >= 38 && $value < 44) {
-              $grade = 'D Fail';
-            }
-            elseif ($value >= 0 && $value < 32) {
-              $grade = 'E Jembe';
-            }
-
           return $grade;
           }
+
 
           $servername = "localhost";
           $username = "root";
