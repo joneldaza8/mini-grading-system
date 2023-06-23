@@ -164,19 +164,19 @@
         //Grading system
         function getGrade($value){
             if($value >= 80 && $value <= 100){
-              $grade = 'A - Excellent';
+              $grade = 'A Excellent';
             }
             elseif ($value >= 60 && $value < 80) {
-              $grade = 'B - Very Good';
+              $grade = 'B Very Good';
             }
             elseif ($value >= 40 && $value < 60) {
-              $grade = 'C - Good';
+              $grade = 'C Good';
             }
             elseif ($value >= 20 && $value < 40) {
-              $grade = 'D - Fail';
+              $grade = 'D Fail';
             }
             elseif ($value >= 0 && $value < 20) {
-              $grade = 'E - Jembe';
+              $grade = 'E Jembe';
             }
             else {
               $grade = 'X - You did not do the exam';
