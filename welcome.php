@@ -1,11 +1,30 @@
+<?php
+// Initialize the session
+session_start();
+ 
+// Check if the user is logged in, if not then redirect him to login page
+if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
+    header("location: welcome.php");
+    exit;
+}
+?>
+ 
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title>Admin</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body{ font: 14px sans-serif; text-align: center; }
+    </style>
+</head>
+<body>
+<meta charset="UTF-8">
     <title>Student Grading</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Student Grading PHP</title>
+    <title>Student Grading</title>
   <meta content="" name="descriptison">
   <meta content="" name="keywords">
 
@@ -28,12 +47,6 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style22.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: Mentor - v2.0.0
-  * Template URL: https://bootstrapmade.com/mentor-free-education-bootstrap-theme/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body>
@@ -43,18 +56,6 @@
     <div class="container d-flex align-items-center">
       <a class="navbar-brand" href="index.php"><img src="assets/img/student-grade.png" alt="Logo" style="width:30px;height:30px;"></a>
       <h1 class="logo mr-auto"><a href="index.php">Student Grading System</a></h1> 
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-
-      <nav class="nav-menu d-none d-lg-block">
-        <ul>
-          <li class="active"><a href="index.php">Home</a></li>
-          <li class="active"><a href="about.php">About</a></li>          
-          <li class="active"><a href="totalgrade.php">Admin</a></li>
-			  <!-- Log on to codeastro.com for more projects! -->
-             
-            </ul>
-          </li>
 
         </ul>
       </nav><!-- .nav-menu -->
@@ -80,7 +81,7 @@ if($result = mysqli_query($link, $sql)){
     if(mysqli_num_rows($result) > 0){
         echo '<table class="table table-bordered table-striped">';
             echo "<tr>";
-            echo '<tr class="bg-danger">';
+            echo '<tr class="bg-primary">';
                 echo "<th>id</th>";
                 echo "<th>name</th>";
                 echo "<th>calculus</th>";
@@ -118,7 +119,11 @@ if($result = mysqli_query($link, $sql)){
 mysqli_close($link);
 ?>
 
-    
+<div class="text-center">
+    <p>
+        <a href="reset-password.php" class="btn btn-warning">Reset Your Password</a>
+        <a href="logout.php" class="btn btn-danger ml-3">Sign Out of Your Account</a>
+    </p>
+</div>
 </body>
 </html>
-

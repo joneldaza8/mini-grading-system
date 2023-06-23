@@ -35,14 +35,11 @@
     <div class="container d-flex align-items-center">
       <a class="navbar-brand" href="index.php"><img src="assets/img/student-grade.png" alt="Logo" style="width:30px;height:30px;"></a>
       <h1 class="logo mr-auto"><a href="index.php">Student Grading System</a></h1> 
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
       <nav class="nav-menu d-none d-lg-block">
         <ul>
           <li class="active"><a href="index.php">Home</a></li>
           <li class="active"><a href="about.php">About</a></li>          
-			  <!-- Log on to codeastro.com for more projects! -->
              
             </ul>
           </li>
@@ -50,7 +47,6 @@
         </ul>
       </nav><!-- .nav-menu -->
 
-      <!-- <a href="#" class="get-started-btn">Alumni</a> -->
 
     </div>
   </header><!-- End Header -->
@@ -95,7 +91,6 @@
     </section>
 
   <!-- ======= Hero Section ======= -->
-      <!-- <h2>Learning Today, Leading Tomorrow.</h2> -->
       <div class="text-right">
         <a href="index.php" class="btn-get-started scrollto">Back</a>
       </div>

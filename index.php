@@ -28,12 +28,6 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style22.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: Mentor - v2.0.0
-  * Template URL: https://bootstrapmade.com/mentor-free-education-bootstrap-theme/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body>
@@ -43,15 +37,12 @@
     <div class="container d-flex align-items-center">
       <a class="navbar-brand" href="index.php"><img src="assets/img/student-grade.png" alt="Logo" style="width:30px;height:30px;"></a>
       <h1 class="logo mr-auto"><a href="index.php">Student Grading System</a></h1> 
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-
+ 
       <nav class="nav-menu d-none d-lg-block">
         <ul>
           <li class="active"><a href="index.php">Home</a></li>
           <li class="active"><a href="about.php">About</a></li>          
-          <li class="active"><a href="totalgrade.php">Admin</a></li>
-			  <!-- Log on to codeastro.com for more projects! -->
+          <li class="active"><a href="register.php">Admin</a></li>
              
             </ul>
           </li>
@@ -68,7 +59,6 @@
     <div class="container position-relative" data-aos="zoom-in" data-aos-delay="100">
       <div class="text-center">
       <h1>Student Grading System</h1>
-      <!-- <h2>Learning Today, Leading Tomorrow.</h2> -->
       <div class="text-center">
         <a href="grading_system.php" class="btn-get-started scrollto">Input Now!</a>
       </div>
@@ -114,11 +104,6 @@
           &copy; <strong><span>Student Grading System</span></strong> - <?php echo date('Y');?>
         </div>
         <div class="credits">
-          <!-- All the links in the footer should remain intact. -->
-          <!-- You can delete the links only if you purchased the pro version. -->
-          <!-- Licensing information: https://bootstrapmade.com/license/ -->
-          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/mentor-free-education-bootstrap-theme/ -->
-          <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> -->
         </div>
       </div>
      
